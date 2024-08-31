@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furjoy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F1F3C2; /* Accent color */
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #A1D6B2; /* Primary color */
+            color: #000;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            display: inline-block;
+            width: 150px;  /* Increased size */
+            height: 150px; /* Increased size */
+            border-radius: 50%; /* Makes the logo circular */
+            overflow: hidden; /* Ensures the image fits the circle */
+            margin-bottom: 10px; /* Adjust spacing between logo and text */
+        }
+        .logo img {
+            width: 100%;
+            height: 100%; /* Ensures the image covers the circular area */
+            object-fit: cover; /* Maintains aspect ratio and covers the area */
+        }
+        .hero {
+            background: #A1D6B2; /* Primary color */
+            color: #000;
+            padding: 20px 0; /* Shorter banner */
+            text-align: center;
+            margin-top: -30px; /* Moves hero section closer to the header */
+        }
+        .hero h1 {
+            margin: 10px 0 0 0; /* Adjusts margin to move the text closer to the logo */
+            font-size: 2em; /* Adjust font size as needed */
+        }
+        .hero p {
+            margin: 5px 0; /* Adjust margin for subtitle text */
+            font-size: 1.2em; /* Adjust font size as needed */
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap; /* Allows product cards to wrap onto new lines */
+            justify-content: space-around; /* Distributes product cards evenly */
+        }
+        .product-card {
+            background: #CEDF9F; /* Secondary color */
+            padding: 20px;
+            border: 1px solid #ddd;
+            color: #000;
+            width: 250px; /* Adjust width as needed */
+            margin: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background: #E8B86D; /* Highlight color */
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .nav-links a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Furjoy Logo">
+        </div>
+        <div class="nav-links">
+            <a href="product-page.html">Products</a>
+            <a href="my-orders.html">My Orders</a> <!-- Added "My Orders" link -->
+        </div>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Welcome to Furjoy</h1>
+        <p>Your one-stop shop for all things pet care!</p>
+    </div>
+
+    <div class="container">
+        <div class="product-card">
+            <a href="product-page.html">
+                <img src="Dry shampoo.png" alt="Dry Shampoo">
+            </a>
+            <h3>Dry Shampoo</h3>
+            <p>Perfect for keeping your dog clean and fresh without the need for water.</p>
+            <p class="price">Price: &#8377;300</p>
+        </div>
+        <!-- Add more product cards as needed -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Furjoy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

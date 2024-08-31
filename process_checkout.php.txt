@@ -1,0 +1,42 @@
+<?php
+// Recipient
+$to = 'yrhassang@gmail.com';
+
+// Subject
+$subject = 'New Order from Furjoy';
+
+// Collect POST data from the form
+$fullName = $_POST['full_name'];
+$addressLine = $_POST['address_line'];
+$city = $_POST['city'];
+$state = $_POST['state'];
+$zipCode = $_POST['zip_code'];
+$country = $_POST['country'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$paymentMethod = $_POST['payment_method'];
+$totalPrice = $_POST['total_price'];
+
+// Create the email body
+$message = "New Order Details:\n\n";
+$message .= "Full Name: $fullName\n";
+$message .= "Address Line: $addressLine\n";
+$message .= "City: $city\n";
+$message .= "State: $state\n";
+$message .= "ZIP Code: $zipCode\n";
+$message .= "Country: $country\n";
+$message .= "Email: $email\n";
+$message .= "Phone: $phone\n";
+$message .= "Payment Method: $paymentMethod\n";
+$message .= "Total Price: ₹$totalPrice\n";
+
+// Headers
+$headers = "From: no-reply@furjoy.com";
+
+// Send the email
+mail($to, $subject, $message, $headers);
+
+// Redirect to a thank you page or display a confirmation message
+header('Location: thank_you.html');
+exit;
+?>

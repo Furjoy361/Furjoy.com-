@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Furjoy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F1F3C2; /* Accent color */
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #A1D6B2; /* Primary color */
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .checkout-section {
+            margin-bottom: 20px;
+            background: #CEDF9F; /* Secondary color */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .checkout-section h2 {
+            margin-top: 0;
+        }
+        .checkout-section input, .checkout-section select, .checkout-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-submit {
+            background-color: #FF4500; /* Distinct color for Submit */
+            color: white;
+        }
+        .btn-submit:hover {
+            background-color: #FF6347;
+        }
+        footer {
+            background: #E8B86D; /* Highlight color */
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+        #qr-code {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        #qr-code img {
+            max-width: 250px; /* Adjusted size */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Furjoy Logo" width="150" height="150">
+    </div>
+</header>
+
+<div class="container">
+    <form id="checkout-form" action="process_checkout.php" method="post">
+        <div class="checkout-section">
+            <h2>Order Summary</h2>
+            <p>Item: Dry Shampoo</p>
+            <p>Price: &#8377;300</p>
+            <p>Total: &#8377;<span id="total-price">300</span></p>
+            <input type="hidden" name="total_price" id="hidden-total-price" value="300">
+        </div>
+
+        <div class="checkout-section">
+            <h2>Shipping Information</h2>
+            <input type="text" id="full-name" name="full_name" placeholder="Full Name" required>
+            <input type="text" id="address-line" name="address_line" placeholder="Address Line" required>
+            <input type="text" id="city" name="city" placeholder="City" required>
+            <input type="text" id="state" name="state" placeholder="State" required>
+            <input type="text" id="zip-code" name="zip_code" placeholder="ZIP Code" required>
+            <input type="text" id="country" name="country" placeholder="Country" required>
+        </div>
+
+        <div class="checkout-section">
+            <h2>Contact Information</h2>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+        </div>
+
+        <div class="checkout-section">
+            <h2>Payment Details</h2>
+            <p>Select Payment Method:</p>
+            <select id="payment-method" name="payment_method">
+                <option value="cod" selected>Cash on Delivery</option>
+                <option value="upi">UPI</option>
+            </select>
+            <div id="qr-code">
+                <img src="qr code.jpg" alt="QR Code">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Place Order</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Furjoy. All rights reserved.</p>
+</footer>
+
+<script>
+    // Assuming fixed quantity of 1 for checkout
+    const fixedQuantity = 1;
+    const pricePerUnit = 300;
+    const totalPrice = pricePerUnit * fixedQuantity;
+    document.getElementById('total-price').textContent = `₹${totalPrice}`;
+    document.getElementById('hidden-total-price').value = totalPrice;
+
+    document.getElementById('payment-method').addEventListener('change', function() {
+        const qrCodeDiv = document.getElementById('qr-code');
+        if (this.value === 'upi') {
+            qrCodeDiv.style.display = 'block';
+        } else {
+            qrCodeDiv.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

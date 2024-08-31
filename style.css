@@ -1,0 +1,549 @@
+<style>
+    .logo {
+        max-width: 150px; /* Adjust size as needed */
+        height: auto;
+    }
+    .banner-logo {
+        max-width: 100px; /* Adjust size as needed */
+        height: auto;
+    }
+</style>
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;  /* Increased the width for larger content */
+    height: 150px; /* Set a specific height to keep it circular */
+    border-radius: 50%; /* Keeps the logo circular */
+    overflow: hidden;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;  /* Size of the logo */
+    height: 150px; /* Size of the logo */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden;
+    padding: 10px; /* Adds space around the logo */
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;  /* Size of the logo */
+    height: 150px; /* Size of the logo */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden; /* Ensures the image fits the circle */
+}
+.logo img {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the circular area */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EAE4DD; /* Accent Color */
+}
+header {
+    background-color: #295F98; /* Primary Color */
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;  /* Size of the logo */
+    height: 150px; /* Size of the logo */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden; /* Ensures the image fits the circle */
+}
+.logo img {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the circular area */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+}
+h1 {
+    margin-left: 170px; /* Adjusted to make room for the logo */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 170px; /* Adjusted to make room for the logo */
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff; /* Text color in the header */
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.hero {
+    background: #CDC2A5; /* Secondary Color */
+    color: #000;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero h1 {
+    margin: 0;
+}
+.product {
+    background: #E1D7C6; /* Tertiary Color */
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background: #295F98; /* Primary Color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8B86D; /* Accent Color */
+}
+header {
+    background-color: #A1D6B2; /* Primary Color */
+    color: #000;
+    padding: 10px 0;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;  /* Size of the logo */
+    height: 150px; /* Size of the logo */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden; /* Ensures the image fits the circle */
+}
+.logo img {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the circular area */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+}
+h1 {
+    margin-left: 170px; /* Adjusted to make room for the logo */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 170px; /* Adjusted to make room for the logo */
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #000; /* Text color in the header */
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.hero {
+    background: #CEDF9F; /* Secondary Color */
+    color: #000;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero h1 {
+    margin: 0;
+}
+.product {
+    background: #F1F3C2; /* Tertiary Color */
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background: #A1D6B2; /* Primary Color */
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8B86D; /* Accent Color */
+}
+header {
+    background-color: #A1D6B2; /* Primary Color */
+    color: #000;
+    padding: 10px 0;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;  /* Size of the logo */
+    height: 150px; /* Size of the logo */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden; /* Ensures the image fits the circle */
+}
+.logo img {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the circular area */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+}
+h1 {
+    margin-left: 170px; /* Adjusted to make room for the logo */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 170px; /* Adjusted to make room for the logo */
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #000; /* Text color in the header */
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.hero {
+    background: #CEDF9F; /* Secondary Color */
+    color: #000;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero h1 {
+    margin: 0;
+}
+.product {
+    background: #F1F3C2; /* Tertiary Color */
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background: #A1D6B2; /* Primary Color */
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8B86D; /* Accent Color */
+}
+header {
+    background-color: #A1D6B2; /* Primary Color */
+    color: #000;
+    padding: 10px 0;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;  /* Size of the logo */
+    height: 150px; /* Size of the logo */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden; /* Ensures the image fits the circle */
+}
+.logo img {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the circular area */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+}
+h1 {
+    margin-left: 170px; /* Adjusted to make room for the logo */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 170px; /* Adjusted to make room for the logo */
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #000; /* Text color in the header */
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.hero {
+    background: #CEDF9F; /* Secondary Color */
+    color: #000;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero h1 {
+    margin: 0;
+}
+.product {
+    background: #F1F3C2; /* Tertiary Color */
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background: #A1D6B2; /* Primary Color */
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8B86D; /* Accent Color */
+}
+header {
+    background-color: #A1D6B2; /* Primary Color */
+    color: #000;
+    padding: 10px 0;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;  /* Size of the logo */
+    height: 150px; /* Size of the logo */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden; /* Ensures the image fits the circle */
+}
+.logo img {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the circular area */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+}
+h1 {
+    margin-left: 170px; /* Adjusted to make room for the logo */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 170px; /* Adjusted to make room for the logo */
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #000; /* Text color in the header */
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.hero {
+    background: #A1D6B2; /* Same color as the header */
+    color: #000;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero h1 {
+    margin: 0;
+}
+.product {
+    background: #F1F3C2; /* Tertiary Color */
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background: #A1D6B2; /* Primary Color */
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.header {
+    background-color: #A1D6B2; /* Primary color */
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+.logo {
+    display: inline-block;
+    width: 120px;  /* Adjust size */
+    height: 120px; /* Adjust size */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden; /* Ensures the image fits the circle */
+}
+.logo img {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the circular area */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Center nav items below the logo */
+    margin-left: 20px; /* Adjust margin to make room for the larger logo */
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.header {
+    background-color: #A1D6B2; /* Primary color */
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+.logo {
+    display: inline-block;
+    width: 150px;  /* Increased size */
+    height: 150px; /* Increased size */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden; /* Ensures the image fits the circle */
+    margin-bottom: 10px; /* Adjust spacing between logo and nav */
+}
+.logo img {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the circular area */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Center nav items below the logo */
+    margin-left: 20px; /* Adjust to make room for the larger logo */
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: space-between;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #E8B86D; /* Highlight color */
+}
+
+.btn {
+    display: inline-block;
+    background: #A1D6B2; /* Primary color */
+    color: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px; /* Rounded corners for the button */
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #8cbfb2; /* Slightly darker on hover */
+}
+#contact {
+    background: #A1D6B2;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: left;
+    border-radius: 10px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | Furjoy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F1F3C2; /* Accent color */
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #A1D6B2; /* Primary color */
+            color: #000;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .nav-links a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            flex: 1;
+        }
+        .order-section {
+            background: #CEDF9F; /* Secondary color */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .order-section h2 {
+            margin-top: 0;
+        }
+        .order-item {
+            background: #FFF;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .order-item p {
+            margin: 5px 0;
+        }
+        footer {
+            background: #E8B86D; /* Highlight color */
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="product-page.html">Products</a>
+            <a href="my-orders.html">My Orders</a> <!-- Link to My Orders page -->
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="order-section">
+            <h2>My Orders</h2>
+            <p>No orders found.</p> <!-- Message indicating no orders -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Furjoy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
